@@ -23,9 +23,8 @@ module.exports = (robot) ->
         'beard slap': 'http://i.imgur.com/6qLjt.gif'
 
     robot.respond /gif (.*)/i, (msg) ->
-        name = gifs[msg.match[0]]
+        name = gifs[msg.match[1]]
         msg.send name if name?
 
     robot.respond /gif bomb/i, ->
-            for name, gif of gifs
-                msg.send gif
+        msg.send gif for name, gif of gifs
