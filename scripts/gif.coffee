@@ -21,6 +21,7 @@ module.exports = (robot) ->
         'survive': 'http://media.giphy.com/media/a8yhMwEUiePqU/giphy.gif',
         'hold on to your butts': 'http://24.media.tumblr.com/tumblr_m48kj1M5tG1r7tfy9o2_500.gif'
         'beard slap': 'http://i.imgur.com/6qLjt.gif'
+        'jump put window': 'http://img.pandawhale.com/26643-Jump-Out-Window-gif-AT8K.gif'
 
     robot.respond /gif (.*)/i, (msg) ->
         name = gifs[msg.match[1]]
